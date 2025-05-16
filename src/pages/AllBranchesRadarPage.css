@@ -1,0 +1,209 @@
+.all-branches-radar-page {
+  padding: 0;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.all-branches-radar-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+/* 头部样式 */
+.radar-header {
+  background-color: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 20px;
+}
+
+.page-title {
+  text-align: center;
+  color: #003366 !important;
+  margin: 10px 0 20px !important;
+  font-size: 24px !important;
+  font-weight: 600 !important;
+}
+
+.dimensions-legend {
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 800px;
+}
+
+.dimension-item {
+  display: flex;
+  align-items: center;
+  margin: 0 8px;
+  padding: 4px 10px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.dimension-color {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.dimension-name {
+  font-size: 10px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* 内容区域样式 */
+.radar-content {
+  flex: 1;
+  padding: 0 20px 20px;
+  background-color: #fff;
+}
+
+.radar-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.second-row {
+  padding-left: 8%;
+}
+
+.radar-col {
+  flex: 0 0 16%;
+  padding: 0 8px;
+}
+
+.branch-card {
+  border-radius: 8px;
+  padding: 12px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  transition: all 0.3s ease;
+  border: 1px solid;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.branch-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.branch-name {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 8px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 0 5px;
+}
+
+.branch-avg-score {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.radar-svg-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* 底部样式 */
+.radar-footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e8e8e8;
+  margin-top: 20px;
+}
+
+/* 响应式样式 */
+@media (max-width: 1200px) {
+  .radar-col {
+    flex: 0 0 20%;
+  }
+
+  .second-row {
+    padding-left: 10%;
+  }
+}
+
+@media (max-width: 992px) {
+  .radar-row {
+    flex-wrap: wrap;
+  }
+
+  .radar-col {
+    flex: 0 0 33.33%;
+    margin-bottom: 20px;
+  }
+
+  .second-row {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .radar-col {
+    flex: 0 0 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .radar-col {
+    flex: 0 0 100%;
+  }
+}
+
+/* 颜色类 - 用于支部卡片 */
+.bg-blue { background-color: rgba(230, 244, 255, 0.6); }
+.bg-red { background-color: rgba(255, 241, 240, 0.6); }
+.bg-green { background-color: rgba(246, 255, 237, 0.6); }
+.bg-yellow { background-color: rgba(255, 251, 230, 0.6); }
+.bg-purple { background-color: rgba(247, 237, 255, 0.6); }
+.bg-orange { background-color: rgba(255, 247, 231, 0.6); }
+
+.border-blue { border-color: #1890ff; }
+.border-red { border-color: #f5222d; }
+.border-green { border-color: #52c41a; }
+.border-yellow { border-color: #faad14; }
+.border-purple { border-color: #722ed1; }
+.border-orange { border-color: #fa8c16; }
+
+.text-blue, .text-1890ff { color: #1890ff; }
+.text-red, .text-f5222d { color: #f5222d; }
+.text-green, .text-52c41a { color: #52c41a; }
+.text-yellow, .text-faad14 { color: #faad14; }
+.text-purple, .text-722ed1 { color: #722ed1; }
+.text-orange, .text-fa8c16 { color: #fa8c16; }
+
+/* 维度颜色背景 */
+.bg-dim-1890ff { background-color: #1890ff; }
+.bg-dim-f5222d { background-color: #f5222d; }
+.bg-dim-52c41a { background-color: #52c41a; }
+.bg-dim-faad14 { background-color: #faad14; }
+.bg-dim-722ed1 { background-color: #722ed1; }
+.bg-dim-fa8c16 { background-color: #fa8c16; }
+
+/* SVG元素颜色 */
+.text-1890ff { stroke: #1890ff; }
+.text-f5222d { stroke: #f5222d; }
+.text-52c41a { stroke: #52c41a; }
+.text-faad14 { stroke: #faad14; }
+.text-722ed1 { stroke: #722ed1; }
+.text-fa8c16 { stroke: #fa8c16; }

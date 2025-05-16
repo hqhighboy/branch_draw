@@ -1,0 +1,74 @@
+.ai-config {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.ai-config-card {
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  transition: box-shadow 0.3s ease;
+}
+
+.ai-config-card:hover {
+  box-shadow: var(--card-shadow-hover);
+}
+
+.ai-config-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--font-size-normal);
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.local-config, .remote-config {
+  margin-bottom: var(--spacing-md);
+}
+
+.model-selector, .api-input {
+  margin-bottom: var(--spacing-md);
+}
+
+.model-selector label, .api-input label {
+  display: block;
+  margin-bottom: var(--spacing-xs);
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.model-params {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+}
+
+.param-item {
+  flex: 1;
+  min-width: 200px;
+}
+
+.param-desc {
+  margin-top: var(--spacing-xs);
+  font-size: var(--font-size-small);
+  color: var(--text-secondary-color);
+}
+
+.test-connection {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--spacing-lg);
+}
+
+.success-button {
+  background-color: var(--success-color) !important;
+  border-color: var(--success-color) !important;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .model-params {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,40 @@
+/**
+ * 卡片组件样式
+ */
+
+.dashboard-card {
+  background-color: var(--component-background);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  height: 100%;
+  transition: box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+  box-shadow: var(--card-shadow-hover);
+}
+
+.dashboard-card .ant-card-head {
+  background-color: var(--component-background);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0 var(--card-padding);
+  min-height: 40px; /* 减小标题高度 */
+  border-radius: var(--card-radius) var(--card-radius) 0 0;
+}
+
+.dashboard-card .ant-card-head-title {
+  padding: 8px 0; /* 减小内边距 */
+  font-size: 14px; /* 减小字体大小 */
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.dashboard-card .ant-card-extra {
+  padding: 8px 0;
+}
+
+.dashboard-card .ant-card-body {
+  padding: var(--spacing-sm);
+  background-color: var(--component-background);
+  border-radius: 0 0 var(--card-radius) var(--card-radius);
+}

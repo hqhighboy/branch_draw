@@ -1,0 +1,39 @@
+.settings-page {
+  padding: 20px;
+}
+
+.page-title {
+  color: #0056A4;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.settings-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ant-tabs-nav {
+  margin-bottom: 24px;
+}
+
+.ant-form-item-label > label {
+  font-weight: 500;
+}
+
+.ant-divider {
+  margin: 24px 0;
+}
+
+@media (max-width: 768px) {
+  .settings-page {
+    padding: 16px;
+  }
+  
+  .page-title {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+}

@@ -1,0 +1,394 @@
+/* 全部支部视图样式优化 */
+
+/* 整体容器 */
+.compact-branch-capability-view {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.no-data-message {
+  padding: 40px;
+  text-align: center;
+  font-size: 16px;
+  color: #999;
+  background: #f9f9f9;
+  border-radius: 8px;
+  margin: 20px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* 控制栏 */
+.view-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.control-divider {
+  margin: 12px 0;
+}
+
+.control-left {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.view-mode-control, .metric-control {
+  margin-left: 8px;
+}
+
+.info-button {
+  color: #1890ff;
+  border-color: #d9d9d9;
+}
+
+/* 卡片视图 */
+.branch-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+/* 卡片列样式 */
+.branch-card-col {
+  margin-bottom: 16px; /* 增加底部间距，避免卡片重叠 */
+}
+
+/* 支部卡片 */
+.compact-branch-card {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+  border-radius: 8px;
+  overflow: visible; /* 修改为visible，避免内容被截断 */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e8e8e8;
+}
+
+.compact-branch-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+/* 卡片标题 */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 70%;
+}
+
+.grade-tag {
+  margin-left: 8px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* 卡片内容 */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: visible; /* 确保内容不被截断 */
+}
+
+/* 得分区域 */
+.score-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.main-score {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.score-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0056A4;
+  line-height: 1;
+}
+
+.score-suffix {
+  font-size: 14px;
+  color: #666;
+  margin-left: 4px;
+}
+
+/* 维度得分 */
+.dimension-scores {
+  margin-top: 12px;
+  border-top: 1px dashed #eaeaea;
+  padding-top: 8px;
+}
+
+.dimension-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  font-size: 12px;
+  color: #666;
+  flex-wrap: nowrap; /* 防止文字换行 */
+}
+
+.dimension-row span {
+  display: flex;
+  align-items: center;
+  white-space: nowrap; /* 防止文字换行 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dimension-row strong {
+  color: #0056A4;
+  margin: 0 4px;
+  font-size: 12px;
+}
+
+/* 标签区域 */
+.tags-section {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px dashed #eaeaea;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.branch-tag {
+  margin-right: 0;
+  font-size: 11px;
+  padding: 0 6px;
+  height: 20px;
+  line-height: 20px;
+}
+
+.more-tag {
+  background-color: #f0f0f0;
+  color: #666;
+  border: none;
+}
+
+/* 图表区域 */
+.chart-section {
+  margin-top: 8px;
+  height: 200px; /* 增加高度以适应更大的雷达图 */
+  border-top: 1px dashed #eaeaea;
+  padding-top: 8px;
+  position: relative;
+  overflow: visible;
+}
+
+.chart-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 雷达图包装器 */
+.radar-wrapper {
+  width: 180px;
+  height: 180px;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1.1); /* 稍微放大一点 */
+}
+
+.radar-no-data {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+  font-size: 12px;
+  background: #f5f5f5;
+  border-radius: 50%;
+}
+
+/* 柱状图区域 */
+.bar-chart-section {
+  margin-top: 12px;
+  border-top: 1px dashed #eaeaea;
+  padding-top: 8px;
+}
+
+.bar-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.bar-label {
+  width: 60px;
+  font-size: 12px;
+  color: #666;
+  text-align: right;
+  padding-right: 8px;
+  white-space: nowrap;
+}
+
+.bar-progress {
+  flex: 1;
+}
+
+.bar-value {
+  width: 30px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #0056A4;
+  text-align: right;
+  padding-left: 8px;
+}
+
+/* 表格视图 */
+.branch-capability-table {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.branch-capability-table .ant-table-thead > tr > th {
+  background-color: #f0f5ff;
+  color: #0056A4;
+  font-weight: 600;
+  padding: 12px 16px;
+}
+
+.branch-capability-table .ant-table-tbody > tr > td {
+  padding: 12px 16px;
+}
+
+/* 前三名行样式 */
+.branch-capability-table .top-1-row {
+  background-color: rgba(245, 34, 45, 0.05);
+}
+
+.branch-capability-table .top-2-row {
+  background-color: rgba(250, 140, 22, 0.05);
+}
+
+.branch-capability-table .top-3-row {
+  background-color: rgba(250, 173, 20, 0.05);
+}
+
+.branch-capability-table .ant-table-summary {
+  background-color: #f9f9f9;
+  font-weight: 500;
+}
+
+.branch-capability-table .ant-table-summary strong {
+  color: #0056A4;
+}
+
+.trophy-icon {
+  color: #faad14;
+  font-size: 16px;
+}
+
+.summary-score {
+  color: #0056A4;
+  font-size: 14px;
+}
+
+.branch-name-cell {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.branch-name {
+  font-weight: 500;
+  color: #333;
+}
+
+.score-cell {
+  display: flex;
+  align-items: center;
+}
+
+.score-value {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.dimension-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.management-score {
+  font-weight: bold;
+  color: #0056A4;
+  margin-right: 8px;
+}
+
+.tags-cell {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+/* 排名徽章样式 */
+.rank-badge {
+  font-size: 12px !important;
+  font-weight: bold !important;
+  box-shadow: 0 0 0 2px #fff !important;
+}
+
+.rank-1 {
+  background-color: #f5222d !important;
+}
+
+.rank-2 {
+  background-color: #fa8c16 !important;
+}
+
+.rank-3 {
+  background-color: #faad14 !important;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .control-left {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .view-mode-control, .metric-control {
+    margin-left: 0;
+  }
+
+  .branch-cards-container {
+    gap: 12px;
+  }
+}

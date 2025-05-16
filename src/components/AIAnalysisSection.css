@@ -1,0 +1,68 @@
+.ai-analysis-section {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.ai-query-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.ai-query-input {
+  flex: 1;
+  margin-right: 10px;
+  border-radius: 4px;
+  resize: none;
+}
+
+.ai-query-button {
+  min-width: 80px;
+}
+
+.ai-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.ai-result {
+  margin-top: 20px;
+}
+
+.ai-result-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ai-tips {
+  margin-top: 20px;
+}
+
+.ai-tips-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ai-tips-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.ai-tips-list li {
+  margin-bottom: 10px;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .ai-query-container {
+    flex-direction: column;
+  }
+  
+  .ai-query-input {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .ai-query-button {
+    width: 100%;
+  }
+}

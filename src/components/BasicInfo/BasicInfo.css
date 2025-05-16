@@ -1,0 +1,113 @@
+.basic-info {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-color) transparent;
+}
+
+.basic-info::-webkit-scrollbar {
+  width: 6px;
+}
+
+.basic-info::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.basic-info::-webkit-scrollbar-thumb {
+  background-color: var(--border-color);
+  border-radius: 3px;
+}
+
+/* 支部选择下拉框样式 */
+.branch-selector-wrapper {
+  margin-bottom: 16px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.branch-selector-wrapper label {
+  margin-right: 8px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.branch-selector {
+  width: calc(100% - 80px);
+  padding: 6px 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--component-background);
+  color: var(--text-color);
+  font-size: var(--font-size-small);
+  transition: all 0.3s;
+}
+
+.branch-selector:hover, .branch-selector:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 86, 164, 0.2);
+}
+
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.info-table tr {
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.3s;
+}
+
+.info-table tr:hover {
+  background-color: var(--primary-color-lighter);
+}
+
+.info-table tr:last-child {
+  border-bottom: none;
+}
+
+.info-table td {
+  padding: var(--spacing-sm) 0;
+  vertical-align: top;
+  font-size: var(--font-size-small);
+}
+
+.info-table .label {
+  width: 100px;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.info-table .value {
+  color: var(--text-color);
+}
+
+.honors-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.honor-item {
+  display: inline-block;
+  padding: 4px 10px;
+  background-color: var(--primary-color-lighter);
+  border-radius: 4px;
+  font-size: var(--font-size-small);
+  color: var(--primary-color);
+  transition: all 0.3s;
+}
+
+.honor-item:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(--primary-color-light);
+  color: white;
+}
+
+.no-data {
+  color: var(--text-light-color);
+  font-size: var(--font-size-small);
+  font-style: italic;
+}

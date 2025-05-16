@@ -1,0 +1,181 @@
+/* 浅色主题 */
+:root {
+  /* 主色调 */
+  --primary-color: #0056A4;
+  --primary-color-light: rgba(0, 86, 164, 0.7);
+  --primary-color-lighter: rgba(0, 86, 164, 0.1);
+  --secondary-color: #1890ff;
+
+  /* 背景色 */
+  --background-color: #f0f2f5;
+  --component-background: #ffffff;
+
+  /* 文本颜色 */
+  --text-color: #333333;
+  --text-secondary-color: #666666;
+  --text-light-color: #999999;
+
+  /* 边框和阴影 */
+  --border-color: #e8e8e8;
+  --border-radius: 8px;
+  --card-radius: 6px;
+  --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+  /* 状态颜色 */
+  --success-color: #52c41a;
+  --warning-color: #faad14;
+  --error-color: #f5222d;
+  --info-color: #1890ff;
+
+  /* 图表颜色 */
+  --chart-color-1: rgba(54, 162, 235, 0.7);
+  --chart-color-2: rgba(75, 192, 192, 0.7);
+  --chart-color-3: rgba(255, 206, 86, 0.7);
+  --chart-color-4: rgba(255, 99, 132, 0.7);
+  --chart-color-5: rgba(153, 102, 255, 0.7);
+
+  /* 字体 */
+  --font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --font-size-small: 12px;
+  --font-size-normal: 14px;
+  --font-size-medium: 16px;
+  --font-size-large: 18px;
+
+  /* 布局尺寸 */
+  --header-height: 64px;
+  --footer-height: 48px;
+  --sider-width: 220px;
+  --sider-collapsed-width: 80px;
+  --content-padding: 24px;
+  --card-padding: 16px;
+  --card-title-height: 40px;
+
+  /* 间距 */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+}
+
+/* 深色主题 */
+[data-theme='dark'] {
+  --primary-color: #177ddc;
+  --secondary-color: #1890ff;
+  --background-color: #141414;
+  --component-background: #1f1f1f;
+  --text-color: rgba(255, 255, 255, 0.85);
+  --text-secondary-color: rgba(255, 255, 255, 0.45);
+  --border-color: #303030;
+  --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+  --success-color: #49aa19;
+  --warning-color: #d89614;
+  --error-color: #a61d24;
+}
+
+/* 全局样式 */
+body {
+  font-family: var(--font-family);
+  background-color: #0056A4; /* 南网蓝色 */
+  color: var(--text-color);
+  transition: all 0.3s;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary-color);
+}
+
+/* 卡片样式 */
+.app-card {
+  background-color: var(--component-background);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s;
+}
+
+.app-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+  :root {
+    --content-padding: 16px;
+  }
+
+  .app-card {
+    margin-bottom: 16px;
+  }
+}
+
+/* 骨架屏样式 */
+.skeleton-container {
+  padding: var(--content-padding);
+  background-color: var(--component-background);
+  border-radius: var(--border-radius);
+}
+
+/* 动画效果 */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* 主内容区域样式 */
+.main-content {
+  padding: var(--content-padding);
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  background-color: var(--background-color);
+}
+
+/* 页脚样式 */
+.app-footer {
+  height: var(--footer-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0056A4; /* 南网蓝色 */
+  color: #ffffff; /* 白色文字 */
+  border-top: 1px solid var(--border-color);
+}

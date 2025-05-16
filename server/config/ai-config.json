@@ -1,0 +1,6 @@
+{
+  "provider": "ollama",
+  "model": "deepseek-r1:14b",
+  "temperature": 0.7,
+  "maxTokens": 2000
+}

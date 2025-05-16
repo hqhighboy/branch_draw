@@ -1,0 +1,125 @@
+.dashboard-layout {
+  min-height: 100vh;
+  background-color: #0056A4; /* 南网蓝色 */
+}
+
+.dashboard-layout.dark-theme {
+  background-color: #0056A4; /* 南网蓝色 */
+}
+
+.dashboard-content {
+  padding: var(--spacing-md);
+  background-color: #0056A4; /* 南网蓝色 */
+  min-height: calc(100vh - 60px);
+  overflow-y: auto;
+  transition: all 0.3s;
+}
+
+.dark-theme .dashboard-content {
+  background-color: #0056A4; /* 南网蓝色 */
+}
+
+/* 行间距 */
+.row-spacing {
+  margin-bottom: var(--spacing-md);
+}
+
+.dashboard-card {
+  height: 100%;
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  background-color: var(--component-background);
+  margin-bottom: var(--spacing-md);
+  border: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.dark-theme .dashboard-card {
+  background-color: var(--component-background-dark);
+  box-shadow: var(--card-shadow-dark);
+}
+
+.dashboard-card:hover {
+  box-shadow: var(--card-shadow-hover);
+}
+
+.dark-theme .dashboard-card:hover {
+  box-shadow: var(--card-shadow-hover-dark);
+}
+
+/* 第一行卡片样式 */
+.first-row-card {
+  height: 500px; /* 设置固定高度 */
+  overflow: hidden;
+}
+
+/* 月度工作完成情况卡片样式 */
+.monthly-work-card {
+  height: 400px; /* 调整卡片高度，与参考图片一致 */
+  overflow: hidden;
+}
+
+.dashboard-card .ant-card-head {
+  background-color: var(--component-background);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0 var(--card-padding);
+  min-height: 40px; /* 减小标题高度 */
+  border-radius: var(--card-radius) var(--card-radius) 0 0;
+}
+
+.dark-theme .dashboard-card .ant-card-head {
+  background-color: var(--component-background-dark);
+  border-bottom: 1px solid var(--border-color-dark);
+}
+
+.dashboard-card .ant-card-head-title {
+  padding: 8px 0; /* 减小内边距 */
+  font-size: 14px; /* 减小字体大小 */
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.dark-theme .dashboard-card .ant-card-head-title {
+  color: var(--primary-color-dark);
+}
+
+/* 特别为月度工作卡片优化标题 */
+.monthly-work-card .ant-card-head {
+  min-height: 36px; /* 进一步减小标题高度 */
+}
+
+.monthly-work-card .ant-card-head-title {
+  padding: 6px 0; /* 减小内边距 */
+}
+
+.dashboard-card .ant-card-body {
+  padding: var(--spacing-sm);
+  background-color: var(--component-background);
+  border-radius: 0 0 var(--card-radius) var(--card-radius);
+}
+
+.dark-theme .dashboard-card .ant-card-body {
+  background-color: var(--component-background-dark);
+}
+
+/* 特别为月度工作卡片优化内容区域 */
+.monthly-work-card .ant-card-body {
+  padding: 4px; /* 减小内边距，最大化图表区域 */
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .dashboard-content {
+    padding: var(--spacing-sm);
+  }
+
+  .first-row-card {
+    height: auto;
+    min-height: 300px;
+  }
+
+  .monthly-work-card {
+    height: auto;
+    min-height: 300px;
+  }
+}

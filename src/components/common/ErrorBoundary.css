@@ -1,0 +1,52 @@
+.error-boundary {
+  padding: var(--spacing-lg);
+  background-color: var(--component-background);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  margin: var(--spacing-md);
+}
+
+.dark-theme .error-boundary {
+  background-color: var(--component-background-dark);
+  box-shadow: var(--card-shadow-dark);
+}
+
+.error-details {
+  margin-top: var(--spacing-lg);
+  padding: var(--spacing-md);
+  background-color: var(--component-background-light);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+}
+
+.dark-theme .error-details {
+  background-color: var(--component-background-dark-light);
+  border: 1px solid var(--border-color-dark);
+}
+
+.error-details summary {
+  cursor: pointer;
+  color: var(--primary-color);
+  font-weight: 500;
+  margin-bottom: var(--spacing-sm);
+}
+
+.dark-theme .error-details summary {
+  color: var(--primary-color-dark);
+}
+
+.error-details pre {
+  margin-top: var(--spacing-sm);
+  padding: var(--spacing-sm);
+  background-color: var(--component-background);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  overflow: auto;
+  font-size: var(--font-size-small);
+  white-space: pre-wrap;
+}
+
+.dark-theme .error-details pre {
+  background-color: var(--component-background-dark);
+  border: 1px solid var(--border-color-dark);
+}

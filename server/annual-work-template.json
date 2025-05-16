@@ -1,0 +1,200 @@
+[
+  {
+    "id": 1,
+    "branch": "党建人事党支部",
+    "task": "开展党员教育培训",
+    "startTime": "2024-01-01",
+    "endTime": "2024-03-31",
+    "status": "已完成",
+    "progress": 100
+  },
+  {
+    "id": 2,
+    "branch": "党建人事党支部",
+    "task": "组织党员志愿服务活动",
+    "startTime": "2024-04-01",
+    "endTime": "2024-06-30",
+    "status": "进行中",
+    "progress": 60
+  },
+  {
+    "id": 3,
+    "branch": "综合党支部",
+    "task": "开展廉政教育",
+    "startTime": "2024-01-15",
+    "endTime": "2024-04-15",
+    "status": "已完成",
+    "progress": 100
+  },
+  {
+    "id": 4,
+    "branch": "综合党支部",
+    "task": "组织党员学习十九大精神",
+    "startTime": "2024-05-01",
+    "endTime": "2024-07-31",
+    "status": "进行中",
+    "progress": 75
+  },
+  {
+    "id": 5,
+    "branch": "生技党支部",
+    "task": "开展技术创新研讨会",
+    "startTime": "2024-02-01",
+    "endTime": "2024-05-31",
+    "status": "已完成",
+    "progress": 100
+  },
+  {
+    "id": 6,
+    "branch": "生技党支部",
+    "task": "组织技术比武活动",
+    "startTime": "2024-06-01",
+    "endTime": "2024-08-31",
+    "status": "进行中",
+    "progress": 40
+  },
+  {
+    "id": 7,
+    "branch": "安监党支部",
+    "task": "开展安全生产月活动",
+    "startTime": "2024-03-01",
+    "endTime": "2024-06-30",
+    "status": "已完成",
+    "progress": 100
+  },
+  {
+    "id": 8,
+    "branch": "安监党支部",
+    "task": "组织安全知识竞赛",
+    "startTime": "2024-07-01",
+    "endTime": "2024-09-30",
+    "status": "未开始",
+    "progress": 0
+  },
+  {
+    "id": 9,
+    "branch": "数字运行部党支部",
+    "task": "开展数字化转型培训",
+    "startTime": "2024-01-10",
+    "endTime": "2024-04-10",
+    "status": "已完成",
+    "progress": 100
+  },
+  {
+    "id": 10,
+    "branch": "数字运行部党支部",
+    "task": "组织数字化创新项目评比",
+    "startTime": "2024-05-01",
+    "endTime": "2024-08-31",
+    "status": "进行中",
+    "progress": 50
+  },
+  {
+    "id": 11,
+    "branch": "检修试验党支部",
+    "task": "开展设备检修技能培训",
+    "startTime": "2024-02-15",
+    "endTime": "2024-05-15",
+    "status": "已完成",
+    "progress": 100
+  },
+  {
+    "id": 12,
+    "branch": "检修试验党支部",
+    "task": "组织设备检修技能比赛",
+    "startTime": "2024-06-01",
+    "endTime": "2024-09-30",
+    "status": "进行中",
+    "progress": 30
+  },
+  {
+    "id": 13,
+    "branch": "继保自动化党支部",
+    "task": "开展自动化技术培训",
+    "startTime": "2024-03-01",
+    "endTime": "2024-06-30",
+    "status": "已完成",
+    "progress": 100
+  },
+  {
+    "id": 14,
+    "branch": "继保自动化党支部",
+    "task": "组织自动化技术创新项目",
+    "startTime": "2024-07-01",
+    "endTime": "2024-10-31",
+    "status": "未开始",
+    "progress": 0
+  },
+  {
+    "id": 15,
+    "branch": "500千伏科北数字巡维中心党支部",
+    "task": "开展数字巡检技能培训",
+    "startTime": "2024-01-20",
+    "endTime": "2024-04-20",
+    "status": "已完成",
+    "progress": 100
+  },
+  {
+    "id": 16,
+    "branch": "500千伏科北数字巡维中心党支部",
+    "task": "组织数字巡检技能比赛",
+    "startTime": "2024-05-01",
+    "endTime": "2024-08-31",
+    "status": "进行中",
+    "progress": 65
+  },
+  {
+    "id": 17,
+    "branch": "500千伏北郊数字巡维中心党支部",
+    "task": "开展设备维护培训",
+    "startTime": "2024-02-10",
+    "endTime": "2024-05-10",
+    "status": "已完成",
+    "progress": 100
+  },
+  {
+    "id": 18,
+    "branch": "500千伏北郊数字巡维中心党支部",
+    "task": "组织设备维护技能比赛",
+    "startTime": "2024-06-01",
+    "endTime": "2024-09-30",
+    "status": "进行中",
+    "progress": 45
+  },
+  {
+    "id": 19,
+    "branch": "220千伏罗涌数字巡维中心党支部",
+    "task": "开展安全生产培训",
+    "startTime": "2024-03-15",
+    "endTime": "2024-06-15",
+    "status": "已完成",
+    "progress": 100
+  },
+  {
+    "id": 20,
+    "branch": "220千伏罗涌数字巡维中心党支部",
+    "task": "组织安全生产知识竞赛",
+    "startTime": "2024-07-01",
+    "endTime": "2024-10-31",
+    "status": "未开始",
+    "progress": 0
+  },
+  {
+    "id": 21,
+    "branch": "220千伏田心数字巡维中心党支部",
+    "task": "开展设备维护培训",
+    "startTime": "2024-01-05",
+    "endTime": "2024-04-05",
+    "status": "已完成",
+    "progress": 100
+  },
+  {
+    "id": 22,
+    "branch": "220千伏田心数字巡维中心党支部",
+    "task": "组织设备维护技能比赛",
+    "startTime": "2024-05-01",
+    "endTime": "2024-08-31",
+    "status": "进行中",
+    "progress": 55
+  }
+]

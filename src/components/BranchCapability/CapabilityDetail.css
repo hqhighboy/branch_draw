@@ -1,0 +1,98 @@
+.capability-detail {
+  padding: var(--spacing-sm);
+}
+
+.score-card,
+.dimension-card,
+.analysis-card {
+  height: 100%;
+  box-shadow: var(--card-shadow);
+  transition: box-shadow 0.3s ease;
+}
+
+.score-card:hover,
+.dimension-card:hover,
+.analysis-card:hover {
+  box-shadow: var(--card-shadow-hover);
+}
+
+.overall-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-md) 0;
+}
+
+.score-circle {
+  margin-bottom: var(--spacing-md);
+}
+
+.score-info {
+  text-align: center;
+}
+
+.score-level {
+  font-size: var(--font-size-large);
+  font-weight: 600;
+  margin-bottom: var(--spacing-xs);
+}
+
+.score-desc {
+  font-size: var(--font-size-small);
+  color: var(--text-secondary-color);
+  line-height: 1.5;
+}
+
+.dimension-chart {
+  height: 300px;
+  position: relative;
+}
+
+.dimension-item {
+  background-color: var(--component-background);
+  border-radius: var(--card-radius);
+  padding: var(--spacing-sm);
+  box-shadow: var(--card-shadow-light);
+  transition: box-shadow 0.3s ease;
+}
+
+.dimension-item:hover {
+  box-shadow: var(--card-shadow);
+}
+
+.dimension-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-xs);
+}
+
+.dimension-name {
+  font-size: var(--font-size-small);
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.dimension-value {
+  font-size: var(--font-size-normal);
+  font-weight: 600;
+}
+
+.dimension-level {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: var(--spacing-xs);
+}
+
+.level-label {
+  font-size: var(--font-size-small);
+  color: var(--text-secondary-color);
+  margin-right: var(--spacing-xs);
+}
+
+.level-value {
+  font-size: var(--font-size-small);
+  font-weight: 500;
+}

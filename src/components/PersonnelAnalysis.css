@@ -1,0 +1,54 @@
+.personnel-analysis {
+  width: 100%;
+}
+
+.chart-container {
+  background-color: var(--component-background);
+  border-radius: var(--card-radius);
+  padding: var(--spacing-xs);
+  height: 100%;
+  box-shadow: var(--card-shadow);
+  transition: box-shadow 0.3s ease;
+}
+
+.chart-container:hover {
+  box-shadow: var(--box-shadow);
+}
+
+.chart-title {
+  font-size: var(--font-size-small);
+  font-weight: 500;
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-xs);
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: var(--spacing-xs);
+}
+
+.chart-wrapper {
+  height: 160px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* 减小垂直布局中的行间距 */
+.personnel-analysis .ant-row {
+  margin-bottom: 0 !important;
+}
+
+/* 悬停效果 */
+.chart-container:hover .chart-wrapper {
+  transform: scale(1.02);
+}
+
+.no-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  color: var(--text-light-color);
+  font-size: var(--font-size-normal);
+  background-color: var(--component-background);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+}

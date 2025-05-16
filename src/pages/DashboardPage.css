@@ -1,0 +1,339 @@
+.dashboard-page {
+  width: 100%;
+  min-height: 100%;
+  padding: 0;
+  background-color: #0056A4; /* 南方电网蓝色背景 */
+  color: #fff;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 16px 0;
+  background-color: #0056A4; /* 与页面背景相同 */
+  margin-bottom: 16px;
+  height: 60px; /* 减小高度 */
+}
+
+.dashboard-title {
+  margin: 0 !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+}
+
+.branch-selector-container {
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+}
+
+.branch-selector-container span {
+  margin-right: 8px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.branch-selector {
+  min-width: 200px;
+  padding: 8px 12px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.branch-selector option {
+  background-color: #fff;
+  color: #333;
+}
+
+.branch-selector:hover {
+  border-color: #fff;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.branch-selector:focus {
+  outline: none;
+  border-color: #fff;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+}
+
+.dashboard-content {
+  padding: 0 24px 24px;
+  height: calc(100vh - 120px); /* 调整高度，减去头部(60px)、页脚(40px)和页面边距(20px) */
+  overflow-y: auto;
+}
+
+/* 行间距 */
+.row-spacing {
+  margin-bottom: 30px;
+}
+
+.dashboard-card {
+  height: 100%;
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  background-color: var(--component-background);
+  margin-bottom: var(--spacing-md);
+  border: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+  box-shadow: var(--box-shadow);
+}
+
+/* 第一行卡片样式 */
+.first-row-card {
+  height: 500px; /* 设置固定高度 */
+  overflow: hidden;
+}
+
+/* 月度工作完成情况卡片样式 */
+.monthly-work-card {
+  height: 400px; /* 调整卡片高度，与参考图片一致 */
+  overflow: hidden;
+}
+
+.dashboard-card .ant-card-head {
+  background-color: var(--component-background);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0 var(--card-padding);
+  min-height: 40px; /* 减小标题高度 */
+  border-radius: var(--card-radius) var(--card-radius) 0 0;
+}
+
+.dashboard-card .ant-card-head-title {
+  padding: 8px 0; /* 减小内边距 */
+  font-size: 14px; /* 减小字体大小 */
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+/* 特别为月度工作卡片优化标题 */
+.monthly-work-card .ant-card-head {
+  min-height: 36px; /* 进一步减小标题高度 */
+}
+
+.monthly-work-card .ant-card-head-title {
+  padding: 6px 0; /* 减小内边距 */
+}
+
+.dashboard-card .ant-card-body {
+  padding: var(--spacing-sm);
+  background-color: var(--component-background);
+  border-radius: 0 0 var(--card-radius) var(--card-radius);
+}
+
+/* 特别为月度工作卡片优化内容区域 */
+.monthly-work-card .ant-card-body {
+  padding: 4px; /* 减小内边距，最大化图表区域 */
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .branch-selector-container {
+    margin-top: 12px;
+    width: 100%;
+  }
+
+  .branch-selector {
+    width: 100%;
+  }
+}
+
+/* 拖拽模式切换样式 */
+.view-mode-switch {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  z-index: 100;
+}
+
+.view-mode-switch span {
+  margin-right: 8px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 16px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.view-mode-switch .ant-switch {
+  background-color: rgba(0, 0, 0, 0.4);
+  min-width: 50px;
+  height: 24px;
+}
+
+.view-mode-switch .ant-switch-checked {
+  background-color: #1890ff;
+}
+
+/* 添加悬停效果 */
+.view-mode-switch:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+  border-color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+/* 添加动画效果 */
+.view-mode-switch {
+  animation: pulse-border 2s infinite;
+  transition: all 0.3s ease;
+}
+
+@keyframes pulse-border {
+  0% {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0 4px 18px rgba(24, 144, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+/* 适配响应式 */
+@media (max-width: 768px) {
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 16px 0;
+  }
+
+  .branch-selector-container,
+  .view-mode-switch {
+    margin-left: 0;
+    margin-top: 12px;
+    width: 100%;
+  }
+
+  .view-mode-switch {
+    justify-content: space-between;
+  }
+}
+
+/* 暗色主题支持 */
+.dark-theme .view-mode-switch span {
+  color: #d9d9d9;
+}
+
+/* React Grid Layout样式引入 */
+.react-grid-layout {
+  position: relative;
+  width: 100%;
+}
+
+.react-grid-item {
+  transition: all 200ms ease;
+  transition-property: left, top;
+}
+
+.react-grid-item.react-grid-placeholder {
+  background: #1890ff;
+  opacity: 0.2;
+  transition-duration: 100ms;
+  z-index: 2;
+  border-radius: 4px;
+}
+
+.react-grid-item.react-draggable-dragging {
+  transition: none;
+  z-index: 10;
+}
+
+.react-grid-item.resizing {
+  z-index: 10;
+}
+
+.react-grid-item .react-resizable-handle {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  padding: 0 3px 3px 0;
+}
+
+.react-resizable-hide .react-resizable-handle {
+  display: none;
+}
+
+/* 拖拽模式提示样式 */
+.drag-tip-container {
+  margin: 0 24px 16px;
+}
+
+.drag-mode-tip {
+  position: relative;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  border-left: 4px solid #1890ff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  animation: highlight-pulse 2s infinite;
+}
+
+@keyframes highlight-pulse {
+  0% {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 16px rgba(24, 144, 255, 0.5);
+  }
+  100% {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* 适配响应式 */
+@media (max-width: 768px) {
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 16px 0;
+  }
+
+  .branch-selector-container,
+  .view-mode-switch {
+    margin-left: 0;
+    margin-top: 12px;
+    width: 100%;
+  }
+
+  .view-mode-switch {
+    justify-content: space-between;
+  }
+}

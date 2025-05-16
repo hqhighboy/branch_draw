@@ -1,0 +1,66 @@
+.radar-demo-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.radar-demo-container h2 {
+  color: #1890ff;
+  margin-bottom: 20px;
+}
+
+.radar-chart-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.radar-chart-container svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.radar-legend {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.legend-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.legend-label {
+  font-size: 14px;
+  color: #333;
+}
+
+.radar-description {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  text-align: left;
+}
+
+.radar-description p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}

@@ -1,0 +1,21 @@
+.back-to-top-button {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 40px;
+  height: 40px;
+  z-index: 1000;
+  opacity: 0.8;
+  transition: all 0.3s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.back-to-top-button:hover {
+  opacity: 1;
+  transform: translateY(-3px);
+}
+
+.dark-theme .back-to-top-button {
+  background-color: var(--primary-color-dark);
+  border-color: var(--primary-color-dark);
+}

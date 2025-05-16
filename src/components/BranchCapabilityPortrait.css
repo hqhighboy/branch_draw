@@ -1,0 +1,70 @@
+.branch-capability-portrait {
+  width: 100%;
+  height: 100%;
+}
+
+.capability-tabs {
+  width: 100%;
+  height: 100%;
+}
+
+.tab-content {
+  padding: 16px 0;
+  height: calc(100% - 48px);
+  display: flex;
+  flex-direction: column;
+}
+
+.controls {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.chart-container {
+  flex: 1;
+  position: relative;
+  min-height: 300px;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.radar-chart-container {
+  height: 400px;
+}
+
+.bar-chart-container {
+  height: 400px;
+}
+
+.line-chart-container {
+  height: 400px;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .controls .ant-select {
+    width: 100% !important;
+  }
+  
+  .chart-container {
+    min-height: 250px;
+  }
+}

@@ -1,0 +1,83 @@
+/**
+ * 全局样式变量
+ */
+
+:root {
+  /* 颜色 */
+  --primary-color: #0056A4; /* 南方电网蓝色 */
+  --primary-color-light: rgba(0, 86, 164, 0.1);
+  --primary-color-lighter: rgba(0, 86, 164, 0.05);
+  --success-color: #52c41a;
+  --warning-color: #faad14;
+  --error-color: #f5222d;
+  --info-color: #1890ff;
+  
+  /* 文本颜色 */
+  --text-color: rgba(0, 0, 0, 0.85);
+  --text-secondary-color: rgba(0, 0, 0, 0.45);
+  --text-light-color: rgba(0, 0, 0, 0.25);
+  
+  /* 背景颜色 */
+  --background-color: #f0f2f5;
+  --component-background: #ffffff;
+  --component-background-light: #fafafa;
+  
+  /* 边框 */
+  --border-color: #f0f0f0;
+  --border-radius: 4px;
+  --card-radius: 8px;
+  
+  /* 阴影 */
+  --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  --card-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+  --card-shadow-hover: 0 2px 8px rgba(0, 0, 0, 0.09);
+  --card-shadow-light: 0 1px 2px rgba(0, 0, 0, 0.02);
+  --header-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  
+  /* 间距 */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  
+  /* 卡片内边距 */
+  --card-padding: 16px;
+  
+  /* 字体大小 */
+  --font-size-small: 12px;
+  --font-size-normal: 14px;
+  --font-size-large: 16px;
+  --font-size-xl: 20px;
+  --font-size-xxl: 24px;
+  
+  /* 交互状态 */
+  --item-hover-bg: rgba(0, 0, 0, 0.04);
+}
+
+/* 深色主题变量 */
+.dark-theme {
+  /* 颜色 */
+  --primary-color-dark: #177ddc;
+  --primary-color-dark-light: rgba(23, 125, 220, 0.1);
+  
+  /* 文本颜色 */
+  --text-color-dark: rgba(255, 255, 255, 0.85);
+  --text-secondary-color-dark: rgba(255, 255, 255, 0.45);
+  --text-light-color-dark: rgba(255, 255, 255, 0.25);
+  
+  /* 背景颜色 */
+  --dark-background: #141414;
+  --component-background-dark: #1f1f1f;
+  --component-background-dark-light: #2a2a2a;
+  
+  /* 边框 */
+  --border-color-dark: #303030;
+  
+  /* 阴影 */
+  --card-shadow-dark: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --card-shadow-hover-dark: 0 2px 8px rgba(0, 0, 0, 0.5);
+  
+  /* 交互状态 */
+  --item-hover-bg-dark: rgba(255, 255, 255, 0.08);
+}

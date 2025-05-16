@@ -1,0 +1,80 @@
+.simple-branch-radar-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.radar-card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.page-title {
+  text-align: center;
+  color: #1890ff;
+  margin-bottom: 20px !important;
+}
+
+.branch-selector-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.selector-label {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.radar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.score-details {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.score-details h4 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #1890ff;
+}
+
+.score-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.score-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.dimension-name {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.dimension-score {
+  font-size: 24px;
+  color: #1890ff;
+  font-weight: bold;
+}

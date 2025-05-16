@@ -1,0 +1,57 @@
+.ai-config-section {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.ai-config-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ai-config-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0056A4;
+}
+
+.config-type-selector {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.local-config, .remote-config {
+  margin-bottom: 20px;
+}
+
+.model-selector, .api-input {
+  margin-bottom: 15px;
+}
+
+.model-selector label, .api-input label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333;
+}
+
+.test-connection {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.success-button {
+  background-color: #52c41a !important;
+  border-color: #52c41a !important;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .config-type-selector {
+    flex-direction: column;
+  }
+}

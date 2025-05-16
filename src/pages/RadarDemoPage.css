@@ -1,0 +1,32 @@
+.radar-demo-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f2f5;
+}
+
+.page-header {
+  background-color: #1890ff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.page-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.page-footer {
+  background-color: #001529;
+  color: rgba(255, 255, 255, 0.65);
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+}

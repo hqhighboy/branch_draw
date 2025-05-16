@@ -1,0 +1,31 @@
+.branch-radar-grid {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.radar-row {
+  margin-bottom: 20px;
+}
+
+.radar-card {
+  height: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.radar-container {
+  height: 200px;
+  position: relative;
+}
+
+/* 响应式调整 */
+@media (max-width: 992px) {
+  .radar-container {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .radar-container {
+    height: 300px;
+  }
+}

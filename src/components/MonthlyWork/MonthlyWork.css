@@ -1,0 +1,49 @@
+/**
+ * 月度工作完成情况组件样式
+ */
+
+.monthly-work {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.monthly-work-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 36px;
+  margin-bottom: 8px;
+}
+
+.month-selector {
+  width: 100px;
+}
+
+.monthly-work-chart {
+  flex: 1;
+  height: 550px; /* 大幅增加图表高度 */
+  position: relative;
+  background-color: var(--component-background);
+  border-radius: var(--card-radius);
+  padding: 0; /* 移除内边距，最大化图表区域 */
+  box-shadow: none; /* 移除阴影，减少视觉干扰 */
+  margin-top: -15px; /* 进一步向上移动图表，减少顶部空白 */
+  transition: box-shadow 0.3s ease;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .monthly-work-chart {
+    height: 400px; /* 响应式设计中的高度 */
+  }
+  
+  .monthly-work-header {
+    height: 25px; /* 减小响应式设计中的头部高度 */
+  }
+  
+  .month-selector {
+    width: 80px; /* 响应式设计中减小选择器宽度 */
+  }
+}

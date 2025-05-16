@@ -1,0 +1,11 @@
+.theme-switch {
+  margin-left: var(--spacing-md);
+}
+
+.theme-switch.ant-switch-checked {
+  background-color: #177ddc;
+}
+
+.theme-switch .anticon {
+  font-size: 12px;
+}

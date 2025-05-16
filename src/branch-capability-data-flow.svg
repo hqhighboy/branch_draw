@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="800" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="1000" height="800" fill="#f8f9fa" />
+  
+  <!-- 标题 -->
+  <text x="500" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#1890ff">党支部综合能力画像数据流程图</text>
+  
+  <!-- 数据源区域 -->
+  <rect x="50" y="80" width="900" height="120" rx="10" ry="10" fill="#e6f7ff" stroke="#1890ff" stroke-width="2" />
+  <text x="500" y="100" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1890ff">数据源</text>
+  
+  <!-- 数据源内容 -->
+  <rect x="80" y="120" width="160" height="60" rx="5" ry="5" fill="#ffffff" stroke="#1890ff" stroke-width="1" />
+  <text x="160" y="145" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333333">基础评价数据</text>
+  <text x="160" y="165" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">Excel导入/手动录入</text>
+  
+  <rect x="280" y="120" width="160" height="60" rx="5" ry="5" fill="#ffffff" stroke="#1890ff" stroke-width="1" />
+  <text x="360" y="145" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333333">管理赋值数据</text>
+  <text x="360" y="165" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">表单提交/批量导入</text>
+  
+  <rect x="480" y="120" width="160" height="60" rx="5" ry="5" fill="#ffffff" stroke="#1890ff" stroke-width="1" />
+  <text x="560" y="145" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333333">支部人员数据</text>
+  <text x="560" y="165" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">人员信息/分布统计</text>
+  
+  <rect x="680" y="120" width="160" height="60" rx="5" ry="5" fill="#ffffff" stroke="#1890ff" stroke-width="1" />
+  <text x="760" y="145" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333333">年度工作数据</text>
+  <text x="760" y="165" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">工作计划/完成情况</text>
+  
+  <!-- 数据处理区域 -->
+  <rect x="50" y="240" width="900" height="200" rx="10" ry="10" fill="#fff1f0" stroke="#f5222d" stroke-width="2" />
+  <text x="500" y="260" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#f5222d">数据处理与计算</text>
+  
+  <!-- 基础评价计算 -->
+  <rect x="80" y="290" width="240" height="130" rx="5" ry="5" fill="#ffffff" stroke="#f5222d" stroke-width="1" />
+  <text x="200" y="310" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333333">基础评价计算</text>
+  <text x="200" y="335" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">1. 七个维度评分(0-100分)</text>
+  <text x="200" y="355" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">2. 各维度权重计算</text>
+  <text x="200" y="375" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">3. 基础评价总分计算</text>
+  <text x="200" y="395" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">4. 基础评价等级评定</text>
+  
+  <!-- 管理赋值计算 -->
+  <rect x="360" y="290" width="240" height="130" rx="5" ry="5" fill="#ffffff" stroke="#f5222d" stroke-width="1" />
+  <text x="480" y="310" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333333">管理赋值计算</text>
+  <text x="480" y="335" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">1. 五种赋值类型(-5至+5分)</text>
+  <text x="480" y="355" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">2. 赋值审批流程</text>
+  <text x="480" y="375" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">3. 管理赋值总分计算</text>
+  <text x="480" y="395" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">4. 转换为百分制(×10)</text>
+  
+  <!-- 综合能力计算 -->
+  <rect x="640" y="290" width="240" height="130" rx="5" ry="5" fill="#ffffff" stroke="#f5222d" stroke-width="1" />
+  <text x="760" y="310" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333333">综合能力计算</text>
+  <text x="760" y="335" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">1. 基础评价(80%权重)</text>
+  <text x="760" y="355" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">2. 管理赋值(20%权重)</text>
+  <text x="760" y="375" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">3. 综合得分计算</text>
+  <text x="760" y="395" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">4. 综合等级评定</text>
+  
+  <!-- 计算公式 -->
+  <rect x="50" y="460" width="900" height="80" rx="10" ry="10" fill="#f6ffed" stroke="#52c41a" stroke-width="2" />
+  <text x="500" y="480" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#52c41a">计算公式</text>
+  
+  <text x="500" y="510" font-family="Consolas, monospace" font-size="14" text-anchor="middle" fill="#333333">基础评价总分 = Σ(各维度得分 × 权重)</text>
+  <text x="500" y="530" font-family="Consolas, monospace" font-size="14" text-anchor="middle" fill="#333333">综合能力得分 = 基础评价总分 × 0.8 + 管理赋值总分 × 2</text>
+  
+  <!-- 数据展示区域 -->
+  <rect x="50" y="560" width="900" height="200" rx="10" ry="10" fill="#e6f7ff" stroke="#1890ff" stroke-width="2" />
+  <text x="500" y="580" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1890ff">数据展示</text>
+  
+  <!-- 展示方式 -->
+  <rect x="80" y="600" width="160" height="140" rx="5" ry="5" fill="#ffffff" stroke="#1890ff" stroke-width="1" />
+  <text x="160" y="620" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333333">雷达图视图</text>
+  <text x="160" y="645" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">- 八维度能力展示</text>
+  <text x="160" y="665" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">- 与平均水平对比</text>
+  <text x="160" y="685" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">- 能力特征标签</text>
+  <text x="160" y="705" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">- 管理赋值详情</text>
+  
+  <rect x="260" y="600" width="160" height="140" rx="5" ry="5" fill="#ffffff" stroke="#1890ff" stroke-width="1" />
+  <text x="340" y="620" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333333">柱状图视图</text>
+  <text x="340" y="645" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">- 各维度得分对比</text>
+  <text x="340" y="665" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">- 支部排名情况</text>
+  <text x="340" y="685" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">- 管理赋值分布</text>
+  <text x="340" y="705" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">- 平均水平对比</text>
+  
+  <rect x="440" y="600" width="160" height="140" rx="5" ry="5" fill="#ffffff" stroke="#1890ff" stroke-width="1" />
+  <text x="520" y="620" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333333">趋势图视图</text>
+  <text x="520" y="645" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">- 历史数据趋势</text>
+  <text x="520" y="665" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">- 多维度选择</text>
+  <text x="520" y="685" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">- 时间范围筛选</text>
+  <text x="520" y="705" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">- 趋势分析</text>
+  
+  <rect x="620" y="600" width="160" height="140" rx="5" ry="5" fill="#ffffff" stroke="#1890ff" stroke-width="1" />
+  <text x="700" y="620" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333333">热力图视图</text>
+  <text x="700" y="645" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">- 多支部对比</text>
+  <text x="700" y="665" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">- 优势劣势直观展示</text>
+  <text x="700" y="685" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">- 色彩梯度表示</text>
+  <text x="700" y="705" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">- 横向纵向分析</text>
+  
+  <rect x="800" y="600" width="160" height="140" rx="5" ry="5" fill="#ffffff" stroke="#1890ff" stroke-width="1" />
+  <text x="880" y="620" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333333">月度工作视图</text>
+  <text x="880" y="645" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">- 11个支部横向对比</text>
+  <text x="880" y="665" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">- 多指标选择</text>
+  <text x="880" y="685" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">- 月份筛选</text>
+  <text x="880" y="705" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">- 完成率展示</text>
+  
+  <!-- 数据流向箭头 -->
+  <!-- 数据源到数据处理 -->
+  <path d="M160,180 L160,290" fill="none" stroke="#1890ff" stroke-width="2" stroke-dasharray="5,5" />
+  <polygon points="160,290 155,280 165,280" fill="#1890ff" />
+  
+  <path d="M360,180 L360,290" fill="none" stroke="#1890ff" stroke-width="2" stroke-dasharray="5,5" />
+  <polygon points="360,290 355,280 365,280" fill="#1890ff" />
+  
+  <path d="M560,180 L560,240" fill="none" stroke="#1890ff" stroke-width="2" stroke-dasharray="5,5" />
+  <polygon points="560,240 555,230 565,230" fill="#1890ff" />
+  
+  <path d="M760,180 L760,240" fill="none" stroke="#1890ff" stroke-width="2" stroke-dasharray="5,5" />
+  <polygon points="760,240 755,230 765,230" fill="#1890ff" />
+  
+  <!-- 数据处理内部流向 -->
+  <path d="M320,340 L360,340" fill="none" stroke="#f5222d" stroke-width="2" />
+  <polygon points="360,340 350,335 350,345" fill="#f5222d" />
+  
+  <path d="M600,340 L640,340" fill="none" stroke="#f5222d" stroke-width="2" />
+  <polygon points="640,340 630,335 630,345" fill="#f5222d" />
+  
+  <!-- 数据处理到计算公式 -->
+  <path d="M200,420 L200,500" fill="none" stroke="#f5222d" stroke-width="2" stroke-dasharray="5,5" />
+  <polygon points="200,500 195,490 205,490" fill="#f5222d" />
+  
+  <path d="M480,420 L480,520" fill="none" stroke="#f5222d" stroke-width="2" stroke-dasharray="5,5" />
+  <polygon points="480,520 475,510 485,510" fill="#f5222d" />
+  
+  <path d="M760,420 L760,520" fill="none" stroke="#f5222d" stroke-width="2" stroke-dasharray="5,5" />
+  <polygon points="760,520 755,510 765,510" fill="#f5222d" />
+  
+  <!-- 计算公式到数据展示 -->
+  <path d="M500,540 L500,560" fill="none" stroke="#52c41a" stroke-width="2" />
+  <polygon points="500,560 495,550 505,550" fill="#52c41a" />
+  
+  <!-- 图例 -->
+  <rect x="50" y="770" width="15" height="15" fill="#e6f7ff" stroke="#1890ff" stroke-width="1" />
+  <text x="75" y="783" font-family="Arial, sans-serif" font-size="12" fill="#333333">数据源/展示</text>
+  
+  <rect x="180" y="770" width="15" height="15" fill="#fff1f0" stroke="#f5222d" stroke-width="1" />
+  <text x="205" y="783" font-family="Arial, sans-serif" font-size="12" fill="#333333">数据处理</text>
+  
+  <rect x="310" y="770" width="15" height="15" fill="#f6ffed" stroke="#52c41a" stroke-width="1" />
+  <text x="335" y="783" font-family="Arial, sans-serif" font-size="12" fill="#333333">计算公式</text>
+  
+  <line x1="440" y1="777" x2="470" y2="777" stroke="#1890ff" stroke-width="2" stroke-dasharray="5,5" />
+  <text x="480" y="783" font-family="Arial, sans-serif" font-size="12" fill="#333333">数据流向</text>
+  
+  <line x1="570" y1="777" x2="600" y2="777" stroke="#f5222d" stroke-width="2" />
+  <text x="610" y="783" font-family="Arial, sans-serif" font-size="12" fill="#333333">处理流程</text>
+</svg>

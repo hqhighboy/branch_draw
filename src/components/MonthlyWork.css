@@ -1,0 +1,80 @@
+.monthly-work {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e8e8e8;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.monthly-work-header {
+  display: flex;
+  justify-content: flex-end; /* 将月份选择器放在右侧 */
+  align-items: center;
+  margin-bottom: 4px; /* 减少底部边距 */
+  padding: 8px 10px; /* 适度内边距 */
+  height: 40px; /* 固定高度 */
+}
+
+.month-selector {
+  width: 100px; /* 减小宽度 */
+  border-radius: var(--border-radius);
+  border-color: var(--border-color);
+  transition: all 0.3s;
+  font-size: 12px; /* 减小字体大小 */
+}
+
+.month-selector:hover,
+.month-selector:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px var(--primary-color-lighter);
+}
+
+.monthly-work-chart {
+  flex: 1;
+  height: 400px; /* 设置容器高度 */
+  width: 100%;
+  position: relative;
+  background-color: var(--component-background);
+  border-radius: var(--card-radius);
+  padding: 10px; /* 适度内边距 */
+  box-shadow: none; /* 移除阴影，减少视觉干扰 */
+  transition: box-shadow 0.3s ease;
+}
+
+.monthly-work-chart:hover {
+  box-shadow: var(--box-shadow);
+}
+
+.no-data-message {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #888;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px dashed #ccc;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .monthly-work-chart {
+    height: 350px; /* 响应式设计中的高度 */
+  }
+
+  .monthly-work-header {
+    height: 35px; /* 减小响应式设计中的头部高度 */
+  }
+
+  .month-selector {
+    width: 80px; /* 响应式设计中减小选择器宽度 */
+  }
+}
